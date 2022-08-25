@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>USED_VEHICLE PRICE PREDICTION</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Poppins:wght@400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="form_side">
+        <div class="title-div">
+            <div class="circ"></div>
+         
+            <h3 class="title">Vpredicta</h3>
+
+        </div>
+        
+        
+
+
+        <div class="main_input">
+            <div  id="main">
+                <h4> Let's make value for your money</h4>
+                <h5>Let's do this together.</h5>
+            </div>
+        <!--<form action="{{ url_for('predict') }}" method="POST">-->
+        <form action = "http://localhost:5000/predict" method = "POST">
+
+           
+            <input type="number" id="year" name="year"  placeholder=" Year eg. :  2010" required>
+            <br>
+
+            <input type="number" id="age" name="age"  placeholder="Age eg. :  1" required>
+            <br>
+
+            <input type="text" id="manufacturer" name="manufacturer"  placeholder="Manufacturer eg. :  Toyota" required>
+            <br>
+
+          
+            <input type="text" id="model" name="model"  placeholder="Model e.g. :  Sierra 2500 hd" required>
+            <br>
+
+          
+                <input type="number" id="odometer" name="odometer" placeholder="Odometer reading e.g. : 250000.00" required>
+            <br>
+
+            <input type="number" id="cyl" name="cyl"  placeholder="Cylinder eg. :  6" required>
+            <br>
+
+                <input type="text" id="type" name="type"  placeholder="Type eg. :  SUV" required>
+            <br>
+
+           <input type="text" id="paint" name="paint"  placeholder="Paint Color eg. :  Black" required>
+            <br>
+
+
+
+            <select id="fuel"  name="fuel" required>
+                <option value="">Fuel type </option>
+                <option value="0">Gas</option>
+                <option value="1">Diesel</option>
+                <option value="2">Hybrid</option>
+                <option value="3">Electric</option>
+                <option value="4">Others</option>
+            </select>
+            <br>
+
+            <select name="trans" id="trans" required>
+                <option value="">Transmission type</option>
+                <option value="0">Manual</option>
+                <option value="1">Automatic</option>
+                <option value="2"> Other </option>
+            </select>
+
+            <br>
+
+            <select name="drive" id="drive" required>
+                <option value="">Type of Drive </option>
+                <option value="0">rwd</option>
+                <option value="1">4wd</option>
+                <option value="2">fwd</option>
+            </select>
+            <br>
+
+            <select name="condition" id="condition" required>
+                <option value="">Vehicle Condition</option>
+                <option value="0">Excellent</option>
+                <option value="1">Good</option>
+                <option value="2">Fair</option>
+                <option value="4">Like New</option>
+                <option value="5">New</option>
+                <option value="6">Salvation</option>
+            </select>
+            <br>
+
+            <select name="title" id="title" required>
+                <option value="">Title Status </option>
+                <option value="0">Clean</option>
+                <option value="1">Rebuilt</option>
+                <option value="2">Lien</option>
+                <option value="3">Salvage</option>
+                <option value="4">Missing</option>
+                <option value="5">Parts only</option>
+            </select>
+            <br>
+
+
+                <input type="submit" value="Predict Price" class="button">
+
+
+        </form>
+            <b>{{ prediction_text }}</b>
+        </div>
+    </div>
+    <div class="about_side">
+
+        <div class="proj-cont">
+            <h2 class="proj_name">Used <span>Vehicle</span>  <br> Price  Prediction System</h2>
+        </div>
+
+        <div class="quote">
+            <p>
+                <span>"</span>
+                I'm not going to become a new school, and I'm a classic. I'm not an old school. There are many new cars out there and many old cars out there, but I'm just doing what I do as a classic guy.
+                <span>"</span>
+            </p>
+        </div>
+
+        
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+
+
+
