@@ -1,4 +1,9 @@
 app/vehicles.csv
+app/vehicles2.csv
+app/vehicles2_EDA.csv
+app/vehicles2_FE.csv
+app/vehicles2_cleaned.csv
+app/vehicles2_cleaned_v2.csv
 app/final_RFModel.pkl
 
 venv/
