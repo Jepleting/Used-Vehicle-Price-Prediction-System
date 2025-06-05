@@ -44,9 +44,10 @@ model first before fitting the Random Forest Regressor
 ## 6. Performance Evaluation
 The loaded model has an estimate of the accuracy of 88.1% on unseen data. 
 
-## Deployment
+## 7. Deployment
 ### User Interface Home Page 
 This is the first page you get when you open the web application. 
+
 ![linah](https://github.com/user-attachments/assets/86d51258-8bae-4c06-9e40-4b6665716b8a)
 
 
