@@ -22,8 +22,7 @@ Some missing values were dropped or filled with appropriate values.
 
 Involves taking a look at some of the variables and their distribution. 
 
-Price is the feature that we are predicting in this study. Before applying any models, taking a 
-look at price data may give us some ideas. 
+Price is the feature that we are predicting in this study. 
 
 There is a positive correlation between year and price and a negative correlation 
 between mileage and price. This makes sense, since newer cars are generally more expensive and 
@@ -38,11 +37,17 @@ average mileage of car per year.
 ## 5. Modelling
 
 Splitting the dataset- the data is divided into training and test data in an 80-20 split. 
+
 Fitting the model- using LabelEncoder to convert categorical values to assign numerical values or the 
 model first before fitting the Random Forest Regressor
 
 ## 6. Performance Evaluation
 The loaded model has an estimate of the accuracy of 88.1% on unseen data. 
+
+## Deployment
+### User Interface Home Page 
+This is the first page you get when you open the web application. 
+![linah](https://github.com/user-attachments/assets/86d51258-8bae-4c06-9e40-4b6665716b8a)
 
 
 
